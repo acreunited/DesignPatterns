@@ -1,6 +1,12 @@
 package chapter1.ducks.behaviours.quack;
 
+/**
+ * The Quack Behavior
+ */
 public interface QuackBehavior {
 
-    public void quack();
+    /**
+     * To make the Quack sound
+     */
+    void quack();
 }
