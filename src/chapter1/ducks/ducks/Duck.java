@@ -11,12 +11,12 @@ public abstract class Duck {
     /**
      * The FlyBehavior
      */
-    private final FlyBehavior flyBehavior;
+    private FlyBehavior flyBehavior;
 
     /**
      * The QuackBehavior
      */
-    private final QuackBehavior quackBehavior;
+    private QuackBehavior quackBehavior;
 
     /**
      * Empty constructor
@@ -52,5 +52,21 @@ public abstract class Duck {
      */
     public void swim() {
         System.out.println("All ducks float, even decoys!");
+    }
+
+    /**
+     * Sets the Fly Behavior
+     * @param flyBehavior the fly behavior
+     */
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    /**
+     * Sets the QuackBehavior
+     * @param quackBehavior the quack behavior
+     */
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
     }
 }
