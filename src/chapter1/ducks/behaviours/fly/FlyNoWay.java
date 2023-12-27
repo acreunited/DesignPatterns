@@ -1,5 +1,8 @@
 package chapter1.ducks.behaviours.fly;
 
+/**
+ * For the Ducks that cannot fly
+ */
 public class FlyNoWay implements FlyBehavior {
 
     @Override
