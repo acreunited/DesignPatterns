@@ -6,7 +6,7 @@ package chapter2.observer;
 public class ForecastDisplay implements Observer, DisplayElement {
 
     @Override
-    public void update() {
+    public void update(float temp, float humidity, float pressure) {
 
     }
 
