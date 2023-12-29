@@ -1,4 +1,4 @@
-package chapter2.observer;
+package chapter2.weather.observer;
 
 /**
  * If we want to create our own display elements

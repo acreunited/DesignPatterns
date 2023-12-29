@@ -1,6 +1,6 @@
-package chapter2.observer;
+package chapter2.weather.observer;
 
-import chapter2.subject.WeatherData;
+import chapter2.weather.subject.WeatherData;
 
 /**
  * Keeps track of the min/average/max measurements and displays them
