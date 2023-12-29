@@ -10,7 +10,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
     /**
      * The default pressure value
      */
-    private static final float DEFAULT_PRESSURE = 30.0f;
+    private static final float DEFAULT_PRESSURE = 29.92f;
 
     /**
      * The current pressure
@@ -40,9 +40,9 @@ public class ForecastDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(float temp, float humidity, float pressure) {
+    public void update() {
         this.lastPressure = this.currentPressure;
-        this.currentPressure = pressure;
+        this.currentPressure = this.weatherData.getPressure();
         display();
     }
 
