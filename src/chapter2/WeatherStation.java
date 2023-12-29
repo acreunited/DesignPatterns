@@ -2,6 +2,7 @@ package chapter2;
 
 import chapter2.observer.CurrentConditionsDisplay;
 import chapter2.observer.ForecastDisplay;
+import chapter2.observer.HeatIndexDisplay;
 import chapter2.observer.StatisticsDisplay;
 import chapter2.subject.WeatherData;
 
@@ -27,6 +28,7 @@ public final class WeatherStation {
         CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        HeatIndexDisplay heatDisplay = new HeatIndexDisplay(weatherData);
 
         weatherData.setMeasurements(80.0f, 65.0f, 30.4f);
         weatherData.setMeasurements(82.0f, 70.0f, 29.2f);

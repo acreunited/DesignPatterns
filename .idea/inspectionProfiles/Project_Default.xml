@@ -656,7 +656,7 @@
     <inspection_tool class="StringToUpperWithoutLocale" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="StringTokenizer" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="SubtractionInCompareTo" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="SuppressionAnnotation" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="SuppressionAnnotation" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="myAllowedSuppressions">
         <list>
           <option value="MagicNumber" />
