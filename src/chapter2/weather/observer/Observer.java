@@ -9,11 +9,6 @@ public interface Observer {
 
     /**
      * Updates the weather information
-     *
-     * @param temp the temperature
-     * @param humidity the humidity
-     * @param pressure the pressure
      */
-    //TODO review Brain Power
-    void update(float temp, float humidity, float pressure);
+    void update();
 }
