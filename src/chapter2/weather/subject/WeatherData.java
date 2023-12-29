@@ -1,6 +1,6 @@
-package chapter2.subject;
+package chapter2.weather.subject;
 
-import chapter2.observer.Observer;
+import chapter2.weather.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;

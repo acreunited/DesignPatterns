@@ -1,4 +1,4 @@
-package chapter2.observer;
+package chapter2.weather.observer;
 
 /**
  * Interface to make all elements display their information

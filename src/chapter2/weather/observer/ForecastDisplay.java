@@ -1,6 +1,6 @@
-package chapter2.observer;
+package chapter2.weather.observer;
 
-import chapter2.subject.WeatherData;
+import chapter2.weather.subject.WeatherData;
 
 /**
  * Shows the weather forecast based on the barometer

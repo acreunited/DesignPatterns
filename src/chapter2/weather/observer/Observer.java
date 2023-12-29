@@ -1,4 +1,4 @@
-package chapter2.observer;
+package chapter2.weather.observer;
 
 /**
  * The Observer Interface

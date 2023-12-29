@@ -1,10 +1,10 @@
-package chapter2;
+package chapter2.weather;
 
-import chapter2.observer.CurrentConditionsDisplay;
-import chapter2.observer.ForecastDisplay;
-import chapter2.observer.HeatIndexDisplay;
-import chapter2.observer.StatisticsDisplay;
-import chapter2.subject.WeatherData;
+import chapter2.weather.observer.CurrentConditionsDisplay;
+import chapter2.weather.observer.ForecastDisplay;
+import chapter2.weather.observer.HeatIndexDisplay;
+import chapter2.weather.observer.StatisticsDisplay;
+import chapter2.weather.subject.WeatherData;
 
 /**
  * Runs the Weather application
