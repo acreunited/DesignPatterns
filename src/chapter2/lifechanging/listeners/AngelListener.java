@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * The type Angel listener.
+ * The Angel listener, who is an Observer to the button.
  */
 public class AngelListener implements ActionListener {
 

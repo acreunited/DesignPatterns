@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * The type Devil listener.
+ * The Devil listener, who is an Observer to the button.
  */
 public class DevilListener implements ActionListener {
 
