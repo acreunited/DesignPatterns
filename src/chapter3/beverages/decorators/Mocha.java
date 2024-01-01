@@ -1,14 +1,28 @@
 package chapter3.beverages.decorators;
 
-public class Mocha extends CondimentDecorator {
+import chapter3.beverages.drinks.AbstractBeverage;
+
+/**
+ * The Mocha Condiment
+ */
+public class Mocha extends AbstractCondimentDecorator {
+
+    /**
+     * The constructor
+     *
+     * @param beverage the beverage
+     */
+    public Mocha(AbstractBeverage beverage) {
+        this.beverage = beverage;
+    }
 
     @Override
-    public float cost() {
-        return 0;
+    public double cost() {
+        return this.beverage.cost() + 0.2;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return this.beverage.getDescription() + ", Mocha";
     }
 }

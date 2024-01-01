@@ -1,14 +1,25 @@
 package chapter3.beverages.decorators;
 
-public class Soy extends CondimentDecorator {
+import chapter3.beverages.drinks.AbstractBeverage;
+
+public class Soy extends AbstractCondimentDecorator {
+
+    /**
+     * The constructor
+     *
+     * @param beverage the beverage
+     */
+    public Soy(AbstractBeverage beverage) {
+        this.beverage = beverage;
+    }
 
     @Override
-    public float cost() {
-        return 0;
+    public double cost() {
+        return this.beverage.cost() + 0.15;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return this.beverage.getDescription() + ", Soy";
     }
 }
