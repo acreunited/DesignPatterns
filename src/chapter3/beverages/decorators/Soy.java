@@ -18,7 +18,13 @@ public class Soy extends AbstractCondimentDecorator {
 
     @Override
     public double cost() {
-        return this.beverage.cost() + 0.15;
+        double sizeCost = switch (this.beverage.getSize()) {
+            case TALL -> 0.1;
+            case GRANDE -> 0.15;
+            case VENTI -> 0.2;
+        };
+
+        return this.beverage.cost() + sizeCost;
     }
 
     @Override
