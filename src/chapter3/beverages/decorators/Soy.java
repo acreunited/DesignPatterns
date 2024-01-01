@@ -2,6 +2,9 @@ package chapter3.beverages.decorators;
 
 import chapter3.beverages.drinks.AbstractBeverage;
 
+/**
+ * The Soy Condiment
+ */
 public class Soy extends AbstractCondimentDecorator {
 
     /**

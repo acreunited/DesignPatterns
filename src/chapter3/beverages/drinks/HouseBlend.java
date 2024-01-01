@@ -5,6 +5,9 @@ package chapter3.beverages.drinks;
  */
 public class HouseBlend extends AbstractBeverage {
 
+    /**
+     * The constructor
+     */
     public HouseBlend() {
         this.description = "House Blend Coffee";
     }
