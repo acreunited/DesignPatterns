@@ -15,7 +15,7 @@ public abstract class AbstractBeverage {
     /**
      * The Size.
      */
-    SizeEnum size = SizeEnum.TALL;
+    private SizeEnum size = SizeEnum.TALL;
 
     /**
      * Empty Constructor
