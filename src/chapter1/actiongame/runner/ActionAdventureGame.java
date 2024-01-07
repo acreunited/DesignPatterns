@@ -1,8 +1,10 @@
 package chapter1.actiongame.runner;
 
-//TODO - this import was created dynamically, check the settings to not import .*
-import chapter1.actiongame.characters.*;
 import chapter1.actiongame.characters.Character;
+import chapter1.actiongame.characters.King;
+import chapter1.actiongame.characters.Knight;
+import chapter1.actiongame.characters.Queen;
+import chapter1.actiongame.characters.Troll;
 
 /**
  * To run our Action Adventure Game
