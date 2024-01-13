@@ -7,7 +7,7 @@ Principles:
 - Favor composition over inheritance
 - Program to interfaces, not implementations
 - Strive for loosely couples designs between objects that interact
-- Classes should be open for extension, but closes for modification
+- Classes should be open for extension, but closed for modification
 
 ----------------
 
