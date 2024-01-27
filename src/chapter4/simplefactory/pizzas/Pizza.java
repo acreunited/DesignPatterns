@@ -4,14 +4,19 @@ package chapter4.simplefactory.pizzas;
  * Abstract Pizza class
  * Contains methods that can be overridden
  */
-public abstract class AbstractPizza {
+public class Pizza {
 
     /**
      * The name of the Pizza
      */
     private final String name;
 
-    AbstractPizza(PizzasEnum pizzaType) {
+    /**
+     * Instantiates a new Abstract pizza.
+     *
+     * @param pizzaType the pizza type
+     */
+    Pizza(PizzasEnum pizzaType) {
         this.name = pizzaType.name();
     }
 

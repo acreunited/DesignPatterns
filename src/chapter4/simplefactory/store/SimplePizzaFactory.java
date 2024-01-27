@@ -1,9 +1,9 @@
 package chapter4.simplefactory.store;
 
-import chapter4.simplefactory.pizzas.AbstractPizza;
 import chapter4.simplefactory.pizzas.CheesePizza;
 import chapter4.simplefactory.pizzas.ClaimPizza;
 import chapter4.simplefactory.pizzas.PepperoniPizza;
+import chapter4.simplefactory.pizzas.Pizza;
 import chapter4.simplefactory.pizzas.PizzasEnum;
 import chapter4.simplefactory.pizzas.VeggiePizza;
 
@@ -25,7 +25,7 @@ public class SimplePizzaFactory {
      * @param pizzaType the pizza type
      * @return the correct pizza
      */
-    AbstractPizza createPizza(PizzasEnum pizzaType) {
+    Pizza createPizza(PizzasEnum pizzaType) {
         return switch (pizzaType) {
             case CHEESE -> new CheesePizza();
             case PEPPERONI -> new PepperoniPizza();
