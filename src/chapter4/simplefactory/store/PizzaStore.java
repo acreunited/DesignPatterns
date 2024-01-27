@@ -1,6 +1,6 @@
 package chapter4.simplefactory.store;
 
-import chapter4.simplefactory.pizzas.AbstractPizza;
+import chapter4.simplefactory.pizzas.Pizza;
 import chapter4.simplefactory.pizzas.PizzasEnum;
 
 /**
@@ -28,7 +28,7 @@ public class PizzaStore {
      * @param pizzaType the tpe of the Pizza we want
      */
     public void orderPizza(PizzasEnum pizzaType) {
-        AbstractPizza pizza = this.factory.createPizza(pizzaType);
+        Pizza pizza = this.factory.createPizza(pizzaType);
         pizza.prepare();
         pizza.bake();
         pizza.cut();
