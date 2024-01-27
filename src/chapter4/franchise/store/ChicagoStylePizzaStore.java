@@ -7,7 +7,17 @@ import chapter4.franchise.pizzas.chicago.ChicagoStyleClaimPizza;
 import chapter4.franchise.pizzas.chicago.ChicagoStylePepperoniPizza;
 import chapter4.franchise.pizzas.chicago.ChicagoStyleVeggiePizza;
 
+/**
+ * The type Chicago style pizza store.
+ */
 public class ChicagoStylePizzaStore extends AbstractPizzaStore {
+
+    /**
+     * Instantiates a new Chicago style pizza store.
+     */
+    public ChicagoStylePizzaStore() {
+        // empty
+    }
 
     @Override
     public Pizza createPizza(PizzasEnum pizzaType) {

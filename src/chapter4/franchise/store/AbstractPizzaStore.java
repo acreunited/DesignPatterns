@@ -22,5 +22,11 @@ public abstract class AbstractPizzaStore {
         return pizza;
     }
 
-    public abstract Pizza createPizza(PizzasEnum pizzaType);
+    /**
+     * Creates a Pizza
+     *
+     * @param pizzaType the type of the Pizza
+     * @return the correct Pizza instance
+     */
+    abstract Pizza createPizza(PizzasEnum pizzaType);
 }

@@ -7,7 +7,17 @@ import chapter4.franchise.pizzas.newyork.NYStyleClaimPizza;
 import chapter4.franchise.pizzas.newyork.NYStylePepperoniPizza;
 import chapter4.franchise.pizzas.newyork.NYStyleVeggiePizza;
 
+/**
+ * The type Ny style pizza store.
+ */
 public class NYStylePizzaStore extends AbstractPizzaStore {
+
+    /**
+     * Instantiates a new Ny style pizza store.
+     */
+    public NYStylePizzaStore() {
+        // empty
+    }
 
     @Override
     public Pizza createPizza(PizzasEnum pizzaType) {
