@@ -29,6 +29,8 @@ Chapter3: Decorator Pattern
 
 Chapter4: Factory Pattern
 
+- Simple Factory
+    - While not a bona fide design pattern, is a simple way to decouple your clients from concrete classes
 - Abstract Factory:
     - Provides an interface for creating families of related or dependent objects
       without specifying their concrete classes
