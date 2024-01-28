@@ -15,7 +15,17 @@ import chapter4.abstract_factory.ingredients.veggies.EggPlant;
 import chapter4.abstract_factory.ingredients.veggies.Spinach;
 import chapter4.abstract_factory.ingredients.veggies.Veggies;
 
+/**
+ * The type Chicago pizza ingredient factory.
+ */
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
+
+    /**
+     * Instantiates a new Chicago pizza ingredient factory.
+     */
+    public ChicagoPizzaIngredientFactory() {
+        // empty
+    }
 
     @Override
     public Dough createDough() {

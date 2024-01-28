@@ -16,7 +16,17 @@ import chapter4.abstract_factory.ingredients.veggies.Onion;
 import chapter4.abstract_factory.ingredients.veggies.RedPepper;
 import chapter4.abstract_factory.ingredients.veggies.Veggies;
 
+/**
+ * The type Ny pizza ingredient factory.
+ */
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
+
+    /**
+     * Instantiates a new Ny pizza ingredient factory.
+     */
+    public NYPizzaIngredientFactory() {
+        // empty
+    }
 
     @Override
     public Dough createDough() {

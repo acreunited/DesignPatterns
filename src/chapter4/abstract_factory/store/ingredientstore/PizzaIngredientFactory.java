@@ -7,17 +7,50 @@ import chapter4.abstract_factory.ingredients.pepperoni.Pepperoni;
 import chapter4.abstract_factory.ingredients.sauce.Sauce;
 import chapter4.abstract_factory.ingredients.veggies.Veggies;
 
+/**
+ * The interface Pizza ingredient factory.
+ */
 public interface PizzaIngredientFactory {
 
-    public Dough createDough();
+    /**
+     * Create dough
+     *
+     * @return the dough
+     */
+    Dough createDough();
 
-    public Sauce createSauce();
+    /**
+     * Create sauce
+     *
+     * @return the sauce
+     */
+    Sauce createSauce();
 
-    public Cheese createCheese();
+    /**
+     * Create cheese
+     *
+     * @return the cheese
+     */
+    Cheese createCheese();
 
-    public Veggies[] createVeggies();
+    /**
+     * Create veggies
+     *
+     * @return the veggies [ ]
+     */
+    Veggies[] createVeggies();
 
-    public Pepperoni createPepperoni();
+    /**
+     * Create pepperoni.
+     *
+     * @return the pepperoni
+     */
+    Pepperoni createPepperoni();
 
-    public Clams createClam();
+    /**
+     * Create clams.
+     *
+     * @return the clams
+     */
+    Clams createClam();
 }

@@ -16,7 +16,7 @@ public abstract class AbstractPizza {
     /**
      * The name of the Pizza
      */
-    protected String name;
+    String name;
 
     /**
      * The Dough
@@ -28,13 +28,32 @@ public abstract class AbstractPizza {
      */
     protected Sauce sauce;
 
+    /**
+     * The Veggies.
+     */
     protected Veggies[] veggies;
 
+    /**
+     * The Cheese.
+     */
     protected Cheese cheese;
 
+    /**
+     * The Pepperoni.
+     */
     protected Pepperoni pepperoni;
 
+    /**
+     * The Clam.
+     */
     protected Clams clam;
+
+    /**
+     * Instantiates a new Abstract pizza.
+     */
+    protected AbstractPizza() {
+        // empty
+    }
 
     /**
      * Prepares the Pizza
@@ -61,14 +80,4 @@ public abstract class AbstractPizza {
     public void box() {
         System.out.println("Place pizza in official Pizza Store box");
     }
-
-    /**
-     * Gets name.
-     *
-     * @return the name
-     */
-    public String getName() {
-        return this.name;
-    }
-
 }

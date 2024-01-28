@@ -9,9 +9,17 @@ import chapter4.abstract_factory.pizzas.PizzasEnum;
 public abstract class AbstractPizzaStore {
 
     /**
+     * Instantiates a new Abstract pizza store.
+     */
+    AbstractPizzaStore() {
+        // empty
+    }
+
+    /**
      * Makes a pizza using Factory
      *
      * @param pizzaType the tpe of the Pizza we want
+     * @return the abstract pizza
      */
     public AbstractPizza orderPizza(PizzasEnum pizzaType) {
         AbstractPizza pizza = createPizza(pizzaType);

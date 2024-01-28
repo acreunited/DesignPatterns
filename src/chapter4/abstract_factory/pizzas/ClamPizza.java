@@ -2,10 +2,21 @@ package chapter4.abstract_factory.pizzas;
 
 import chapter4.abstract_factory.store.ingredientstore.PizzaIngredientFactory;
 
+/**
+ * The type Clam pizza.
+ */
 public class ClamPizza extends AbstractPizza {
 
+    /**
+     * The ingredient factory
+     */
     private PizzaIngredientFactory ingredientFactory;
 
+    /**
+     * Instantiates a new Clam pizza.
+     *
+     * @param ingredientFactory the ingredient factory
+     */
     public ClamPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
         this.name = PizzasEnum.CLAM.name();
