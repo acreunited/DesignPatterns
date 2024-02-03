@@ -38,3 +38,7 @@ Chapter4: Factory Pattern
     - Defines an interface for creating an object,
       but let subclasses decide which class to instantiate.
     - Lets a class defer instantiation to the subclass
+
+Chapter5: Singleton Pattern
+
+- Ensures that a class has only one instance, and provides a global point of access to it
