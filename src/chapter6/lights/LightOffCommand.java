@@ -5,7 +5,7 @@ import chapter6.Command;
 /**
  * The type Light on command.
  */
-public class LightOnCommand implements Command {
+public class LightOffCommand implements Command {
 
     /**
      * The light
@@ -17,12 +17,12 @@ public class LightOnCommand implements Command {
      *
      * @param light the light
      */
-    public LightOnCommand(Light light) {
+    public LightOffCommand(Light light) {
         this.light = light;
     }
 
     @Override
     public void execute() {
-        this.light.on();
+        this.light.off();
     }
 }

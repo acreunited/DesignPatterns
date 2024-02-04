@@ -15,14 +15,14 @@ public class Light {
     /**
      * On.
      */
-    public void on() {
+    void on() {
         System.out.println("Lights ON");
     }
 
     /**
      * Off.
      */
-    public void off() {
+    void off() {
         System.out.println("Lights OFF");
     }
 }
