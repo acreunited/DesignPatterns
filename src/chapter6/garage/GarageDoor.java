@@ -15,35 +15,35 @@ public class GarageDoor {
     /**
      * Up.
      */
-    public void up() {
+    void up() {
         System.out.println("Garage Door UP");
     }
 
     /**
      * Down.
      */
-    public void down() {
+    void down() {
         System.out.println("Garage Door DOWN");
     }
 
     /**
      * Stop.
      */
-    public void stop() {
+    void stop() {
         System.out.println("Garage Door STOP");
     }
 
     /**
      * Lights on.
      */
-    public void lightsOn() {
+    void lightsOn() {
         System.out.println("Garage Door LIGHTS ON");
     }
 
     /**
      * Lights off.
      */
-    public void lightsOff() {
+    void lightsOff() {
         System.out.println("Garage Door LIGHTS OFF");
     }
 }

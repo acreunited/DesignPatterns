@@ -5,7 +5,7 @@ import chapter6.Command;
 /**
  * The type Garage door open command.
  */
-public class GarageDoorOpenCommand implements Command {
+public class GarageDoorUpCommand implements Command {
 
     /**
      * The Garage Door
@@ -17,7 +17,7 @@ public class GarageDoorOpenCommand implements Command {
      *
      * @param garageDoor the garage door
      */
-    public GarageDoorOpenCommand(GarageDoor garageDoor) {
+    public GarageDoorUpCommand(GarageDoor garageDoor) {
         this.garageDoor = garageDoor;
     }
 

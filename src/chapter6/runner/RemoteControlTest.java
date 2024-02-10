@@ -3,14 +3,14 @@ package chapter6.runner;
 import chapter6.Command;
 import chapter6.SimpleRemoteControl;
 import chapter6.garage.GarageDoor;
-import chapter6.garage.GarageDoorOpenCommand;
+import chapter6.garage.GarageDoorUpCommand;
 import chapter6.lights.Light;
 import chapter6.lights.LightOnCommand;
 
 /**
  * The type Remote control test.
  */
-public class RemoteControlTest {
+public final class RemoteControlTest {
 
     /**
      * Private empty constructor
@@ -30,7 +30,7 @@ public class RemoteControlTest {
         Command lightOn = new LightOnCommand(light);
 
         GarageDoor garageDoor = new GarageDoor();
-        Command garageOpen = new GarageDoorOpenCommand(garageDoor);
+        Command garageOpen = new GarageDoorUpCommand(garageDoor);
 
         remote.setCommand(lightOn);
         remote.buttonWasPressed();
