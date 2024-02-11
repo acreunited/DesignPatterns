@@ -1,42 +1,86 @@
 package chapter6.ceiling;
 
+/**
+ * The type Ceiling fan.
+ */
 public class CeilingFan {
-    String location = "";
-    int level;
-    public static final int HIGH = 2;
-    public static final int MEDIUM = 1;
-    public static final int LOW = 0;
 
+    /**
+     * The Location.
+     */
+    private String location = "";
+
+    /**
+     * The Speed Level.
+     */
+    private int speed = 0;
+
+    /**
+     * The constant HIGH.
+     */
+    static final int HIGH = 2;
+
+    /**
+     * The constant MEDIUM.
+     */
+    static final int MEDIUM = 1;
+
+    /**
+     * The constant LOW.
+     */
+    static final int LOW = 0;
+
+    /**
+     * Instantiates a new Ceiling fan.
+     *
+     * @param location the location
+     */
     public CeilingFan(String location) {
         this.location = location;
     }
 
-    public void high() {
+    /**
+     * High.
+     */
+    void high() {
         // turns the ceiling fan on to high
-        level = HIGH;
-        System.out.println(location + " ceiling fan is on high");
-
+        this.speed = HIGH;
+        System.out.println(this.location + " ceiling fan is on high");
     }
 
-    public void medium() {
+    /**
+     * Medium.
+     */
+    void medium() {
         // turns the ceiling fan on to medium
-        level = MEDIUM;
-        System.out.println(location + " ceiling fan is on medium");
+        this.speed = MEDIUM;
+        System.out.println(this.location + " ceiling fan is on medium");
     }
 
-    public void low() {
+    /**
+     * Low.
+     */
+    void low() {
         // turns the ceiling fan on to low
-        level = LOW;
-        System.out.println(location + " ceiling fan is on low");
+        this.speed = LOW;
+        System.out.println(this.location + " ceiling fan is on low");
     }
 
+    /**
+     * Off.
+     */
     public void off() {
         // turns the ceiling fan off
-        level = 0;
-        System.out.println(location + " ceiling fan is off");
+        this.speed = 0;
+        System.out.println(this.location + " ceiling fan is off");
     }
 
-    public int getSpeed() {
-        return level;
+    /**
+     * Gets speed.
+     *
+     * @return the speed
+     */
+    int getSpeed() {
+        return this.speed;
     }
 }
