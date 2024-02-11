@@ -42,3 +42,17 @@ Chapter4: Factory Pattern
 Chapter5: Singleton Pattern
 
 - Ensures that a class has only one instance, and provides a global point of access to it
+
+Chapter6: Command Pattern
+
+- Encapsulates a request as an object, thereby letting you parameterize other objects
+  with different requests, queue or log requests, and support undoable operations
+- decouples an object making a request from the one that knows how to perform it
+- A Command is at the center of this decoupling and encapsulates a receiver with an action (or set of actions)
+- an invoker makes a request of a Command object by calling its execute() method, which invokes these actions on the
+  receiver
+- Invokers can be parameterized with Commands, even dynamically at runtime
+- Macro commands are a simple extension of the Command Pattern that allow multiple commands to be invoked
+- "in practice", it's not uncommon for "smart" objects to implement the request themselves, rather than delegating to a
+  receiver
+- Commands may also be used to implement logging and transactional systems

@@ -1,4 +1,4 @@
-package chapter5.singleton;
+package chapter5;
 
 /**
  * The type Singleton.
