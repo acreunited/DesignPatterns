@@ -19,4 +19,9 @@ public class NoCommand implements Command {
     public void execute() {
         // empty
     }
+
+    @Override
+    public void undo() {
+        // empty
+    }
 }

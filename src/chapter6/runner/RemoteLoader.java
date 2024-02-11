@@ -1,7 +1,7 @@
 package chapter6.runner;
 
 import chapter6.Command;
-import chapter6.RemoteControl;
+import chapter6.RemoteControlWithUndo;
 import chapter6.garage.GarageDoor;
 import chapter6.garage.GarageDoorUpCommand;
 import chapter6.lights.Light;
@@ -29,7 +29,7 @@ public final class RemoteLoader {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        RemoteControl remoteControl = new RemoteControl();
+        RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();
 
         Light livingRoomLight = new Light();
         Light kitchenLight = new Light();
@@ -58,5 +58,6 @@ public final class RemoteLoader {
         remoteControl.offButtonWasPushed(1);
         remoteControl.onButtonWasPushed(2);
         remoteControl.offButtonWasPushed(2);
+        remoteControl.undoButtonWasPushed();
     }
 }
