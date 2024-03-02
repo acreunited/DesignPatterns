@@ -9,7 +9,7 @@ import chapter7.turkeys.Turkey;
 public class TurkeyAdapter implements Duck {
 
     /**
-     * Turkeys fly shorter differences, so we need to fly more than one time
+     * Turkeys fly shorter distances, so we need to fly more times
      */
     private static final int NUMBER_OF_FLIES = 5;
 
