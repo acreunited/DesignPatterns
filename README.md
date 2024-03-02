@@ -56,3 +56,8 @@ Chapter6: Command Pattern
 - "in practice", it's not uncommon for "smart" objects to implement the request themselves, rather than delegating to a
   receiver
 - Commands may also be used to implement logging and transactional systems
+
+Chapter7: Adapter Pattern
+
+- Converts the interface of a class into another interface the client expects.
+- Adapter lets classes work together that couldn't otherwise, because of incompatible interfaces
