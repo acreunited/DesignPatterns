@@ -9,6 +9,8 @@ Principles:
 - Strive for loosely couples designs between objects that interact
 - Classes should be open for extension, but closed for modification
 - Depend on abstractions. Do not depend on concrete classes
+- Least Knowledge / Law of Demeter:
+  - talk only to your immediate friends
 
 ----------------
 
@@ -56,3 +58,13 @@ Chapter6: Command Pattern
 - "in practice", it's not uncommon for "smart" objects to implement the request themselves, rather than delegating to a
   receiver
 - Commands may also be used to implement logging and transactional systems
+
+Chapter7: 
+
+- Adapter Pattern
+  - Converts the interface of a class into another interface the client expects.
+  - Adapter lets classes work together that couldn't otherwise, because of incompatible interfaces
+
+- Facade Pattern
+  - Provides a unified interface to a set of interfaces in a subsystem.
+  - Facade defines a higher level interface that makes the subsystem easier to use
