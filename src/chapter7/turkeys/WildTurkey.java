@@ -5,6 +5,13 @@ package chapter7.turkeys;
  */
 public class WildTurkey implements Turkey {
 
+    /**
+     * Instantiates a new Wild turkey.
+     */
+    public WildTurkey() {
+        // empty
+    }
+
     @Override
     public void gobble() {
         System.out.println("Gobble gobble");

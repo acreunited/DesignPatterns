@@ -5,6 +5,13 @@ package chapter7.ducks;
  */
 public class MallardDuck implements Duck {
 
+    /**
+     * Instantiates a new Mallard duck.
+     */
+    public MallardDuck() {
+        // empty
+    }
+
     @Override
     public void quack() {
         System.out.println("Quack");
