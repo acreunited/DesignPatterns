@@ -6,12 +6,20 @@ import chapter7.ducks.MallardDuck;
 import chapter7.turkeys.Turkey;
 import chapter7.turkeys.WildTurkey;
 
+/**
+ * The type Duck test drive.
+ */
 public final class DuckTestDrive {
 
     private DuckTestDrive() {
         // empty
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Duck duck = new MallardDuck();
 
