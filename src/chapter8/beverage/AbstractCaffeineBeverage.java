@@ -3,12 +3,12 @@ package chapter8.beverage;
 /**
  * Class to prepare Caffeine Drinks
  */
-public abstract class CaffeineBeverage {
+public abstract class AbstractCaffeineBeverage {
 
     /**
      * Instantiates a new Caffeine beverage.
      */
-    protected CaffeineBeverage() {
+    protected AbstractCaffeineBeverage() {
         // empty
     }
 

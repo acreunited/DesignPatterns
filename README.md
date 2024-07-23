@@ -68,3 +68,7 @@ Chapter7:
 - Facade Pattern
   - Provides a unified interface to a set of interfaces in a subsystem.
   - Facade defines a higher level interface that makes the subsystem easier to use
+
+Chapter8: Template Method
+
+- defines the steps of an algorithm and allows subclasses to provide the implementation for one or more steps

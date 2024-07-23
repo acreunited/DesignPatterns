@@ -1,11 +1,11 @@
 package chapter8.beverage.coffee;
 
-import chapter8.beverage.CaffeineBeverage;
+import chapter8.beverage.AbstractCaffeineBeverage;
 
 /**
  * The Coffee Beverage
  */
-public class Coffee extends CaffeineBeverage {
+public class Coffee extends AbstractCaffeineBeverage {
 
     /**
      * Instantiates a new Coffee.
