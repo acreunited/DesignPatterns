@@ -10,7 +10,8 @@ Principles:
 - Classes should be open for extension, but closed for modification
 - Depend on abstractions. Do not depend on concrete classes
 - Least Knowledge / Law of Demeter:
-  - talk only to your immediate friends
+    - talk only to your immediate friends
+- Don't call us, we'll call you
 
 ----------------
 
@@ -59,16 +60,25 @@ Chapter6: Command Pattern
   receiver
 - Commands may also be used to implement logging and transactional systems
 
-Chapter7: 
+Chapter7:
 
 - Adapter Pattern
-  - Converts the interface of a class into another interface the client expects.
-  - Adapter lets classes work together that couldn't otherwise, because of incompatible interfaces
+    - Converts the interface of a class into another interface the client expects.
+    - Adapter lets classes work together that couldn't otherwise, because of incompatible interfaces
 
 - Facade Pattern
-  - Provides a unified interface to a set of interfaces in a subsystem.
-  - Facade defines a higher level interface that makes the subsystem easier to use
+    - Provides a unified interface to a set of interfaces in a subsystem.
+    - Facade defines a higher level interface that makes the subsystem easier to use
 
 Chapter8: Template Method
 
+- define the skeleton of an algorithm in an operation, deferring some steps to subclass.
+- lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure
 - defines the steps of an algorithm and allows subclasses to provide the implementation for one or more steps
+- gives us an important technique for code reuse
+- the template's abstract class may define concrete methods, abstract methods and hooks
+- hooks are methods that do nothing or default behavior in the abstract class, but may be overridden in the subclasses
+- to prevent subclasses from changing the algorithm in the template method, declare the template method final
+- the Hollywood Principle guides us to put decision-making in high-level modules that can decide how and when to call
+  low level modules
+- factory method is a specialization of template mthod
