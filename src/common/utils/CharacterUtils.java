@@ -5,6 +5,9 @@ package common.utils;
  */
 public final class CharacterUtils {
 
+    /**
+     * Line break character
+     */
     public static final char LINE_BREAK = '\n';
 
     /**
