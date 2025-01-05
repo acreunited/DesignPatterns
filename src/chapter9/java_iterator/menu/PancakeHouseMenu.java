@@ -1,10 +1,9 @@
 package chapter9.java_iterator.menu;
 
 import chapter9.java_iterator.MenuItem;
-import chapter9.java_iterator.iterator.Iterator;
-import chapter9.java_iterator.iterator.PancakeHouseMenuIterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class PancakeHouseMenu {
@@ -25,8 +24,8 @@ public class PancakeHouseMenu {
         this.menuItems.add(menuItem);
     }
 
-    public Iterator createIterator() {
-        return new PancakeHouseMenuIterator(this.menuItems);
+    public Iterator<MenuItem> createIterator() {
+        return this.menuItems.iterator();
     }
 
     public String toString() {

@@ -2,7 +2,9 @@ package chapter9.java_iterator.iterator;
 
 import chapter9.java_iterator.MenuItem;
 
-public class DinnerMenuIterator implements Iterator {
+import java.util.Iterator;
+
+public class DinnerMenuIterator implements Iterator<MenuItem> {
 
     private MenuItem[] items;
 
@@ -22,5 +24,10 @@ public class DinnerMenuIterator implements Iterator {
         MenuItem menuItem = this.items[this.position];
         this.position++;
         return menuItem;
+    }
+
+    @Override
+    public void remove() {
+        throw new UnsupportedOperationException("You shouldn't be trying to remove menu items");
     }
 }
