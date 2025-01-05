@@ -1,4 +1,4 @@
-package chapter9.menu;
+package chapter9;
 
 /**
  * The type Menu item.
@@ -99,5 +99,10 @@ public class MenuItem {
      */
     public void setPrice(final double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + ", " + this.price + " -- " + this.description;
     }
 }

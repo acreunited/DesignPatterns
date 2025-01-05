@@ -1,5 +1,6 @@
 package chapter9.menu;
 
+import chapter9.MenuItem;
 import chapter9.iterator.Iterator;
 import chapter9.iterator.PancakeHouseMenuIterator;
 

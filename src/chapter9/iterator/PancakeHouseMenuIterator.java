@@ -1,6 +1,6 @@
 package chapter9.iterator;
 
-import chapter9.menu.MenuItem;
+import chapter9.MenuItem;
 
 import java.util.List;
 
