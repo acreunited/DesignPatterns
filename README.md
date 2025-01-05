@@ -95,4 +95,8 @@ Chapter9: Composite Pattern
 - allows you to compose objects into tree structures to represent part-whole hierarchies.
 - lets clients treat individual objects and compositions of objects uniformly
 - using a composite structure, we can apply the same operations over both composites and individual objects. In other
-  words, in mos cases, we can ignore the differences between compositions of objects and individual objects
+  words, in most cases, we can ignore the differences between compositions of objects and individual objects.
+- to be used when you have collections of objects with whole-part relationships and you want to be able to treat them
+  uniformly
+- there are many design tradeoffs in implementing Composite. You need to balance transparency and safety with your
+  needs.
