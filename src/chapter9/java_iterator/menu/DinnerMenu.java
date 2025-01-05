@@ -2,7 +2,8 @@ package chapter9.java_iterator.menu;
 
 import chapter9.java_iterator.MenuItem;
 import chapter9.java_iterator.iterator.DinnerMenuIterator;
-import chapter9.java_iterator.iterator.Iterator;
+
+import java.util.Iterator;
 
 public class DinnerMenu {
 
@@ -31,7 +32,7 @@ public class DinnerMenu {
         }
     }
 
-    public Iterator createIterator() {
+    public Iterator<MenuItem> createIterator() {
         return new DinnerMenuIterator(this.menuItems);
     }
 

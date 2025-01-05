@@ -12,6 +12,8 @@ Principles:
 - Least Knowledge / Law of Demeter:
     - talk only to your immediate friends
 - Don't call us, we'll call you
+- Single Responsibility Principle:
+    - a class should have only one reason to change
 
 ----------------
 
@@ -82,3 +84,8 @@ Chapter8: Template Method
 - the Hollywood Principle guides us to put decision-making in high-level modules that can decide how and when to call
   low level modules
 - factory method is a specialization of template mthod
+
+Chapter9: Iterator Pattern
+
+- provides a way to access the elements of an aggregate object sequentially without exposing its underlying
+  representation
