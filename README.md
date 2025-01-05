@@ -89,3 +89,10 @@ Chapter9: Iterator Pattern
 
 - provides a way to access the elements of an aggregate object sequentially without exposing its underlying
   representation
+
+Chapter9: Composite Pattern
+
+- allows you to compose objects into tree structures to represent part-whole hierarchies.
+- lets clients treat individual objects and compositions of objects uniformly
+- using a composite structure, we can apply the same operations over both composites and individual objects. In other
+  words, in mos cases, we can ignore the differences between compositions of objects and individual objects

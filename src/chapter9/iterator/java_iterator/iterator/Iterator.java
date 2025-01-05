@@ -1,6 +1,6 @@
-package chapter9.custom_iterator.iterator;
+package chapter9.iterator.java_iterator.iterator;
 
-import chapter9.custom_iterator.MenuItem;
+import chapter9.iterator.java_iterator.MenuItem;
 
 /**
  * Interface for iteration

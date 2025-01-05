@@ -1,6 +1,6 @@
-package chapter9.custom_iterator.iterator;
+package chapter9.iterator.custom_iterator.iterator;
 
-import chapter9.custom_iterator.MenuItem;
+import chapter9.iterator.custom_iterator.MenuItem;
 
 public class DinnerMenuIterator implements Iterator {
 

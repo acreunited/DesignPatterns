@@ -1,8 +1,8 @@
-package chapter9.custom_iterator.runner;
+package chapter9.iterator.custom_iterator.runner;
 
-import chapter9.custom_iterator.Waitress;
-import chapter9.custom_iterator.menu.DinnerMenu;
-import chapter9.custom_iterator.menu.PancakeHouseMenu;
+import chapter9.iterator.custom_iterator.Waitress;
+import chapter9.iterator.custom_iterator.menu.DinnerMenu;
+import chapter9.iterator.custom_iterator.menu.PancakeHouseMenu;
 
 public final class MenuTestDrive {
 

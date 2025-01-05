@@ -1,4 +1,4 @@
-package chapter9.custom_iterator;
+package chapter9.iterator.custom_iterator;
 
 /**
  * The type Menu item.

@@ -1,4 +1,4 @@
-package chapter9.java_iterator;
+package chapter9.iterator.java_iterator;
 
 /**
  * The type Menu item.

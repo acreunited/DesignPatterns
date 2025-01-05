@@ -1,8 +1,8 @@
-package chapter9.custom_iterator;
+package chapter9.iterator.custom_iterator;
 
-import chapter9.custom_iterator.iterator.Iterator;
-import chapter9.custom_iterator.menu.DinnerMenu;
-import chapter9.custom_iterator.menu.PancakeHouseMenu;
+import chapter9.iterator.custom_iterator.iterator.Iterator;
+import chapter9.iterator.custom_iterator.menu.DinnerMenu;
+import chapter9.iterator.custom_iterator.menu.PancakeHouseMenu;
 
 public class Waitress {
 
