@@ -1,8 +1,8 @@
-package chapter9.menu;
+package chapter9.java_iterator.menu;
 
-import chapter9.MenuItem;
-import chapter9.iterator.DinnerMenuIterator;
-import chapter9.iterator.Iterator;
+import chapter9.java_iterator.MenuItem;
+import chapter9.java_iterator.iterator.DinnerMenuIterator;
+import chapter9.java_iterator.iterator.Iterator;
 
 public class DinnerMenu {
 

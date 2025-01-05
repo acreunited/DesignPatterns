@@ -1,8 +1,8 @@
-package chapter9.menu;
+package chapter9.custom_iterator.menu;
 
-import chapter9.MenuItem;
-import chapter9.iterator.Iterator;
-import chapter9.iterator.PancakeHouseMenuIterator;
+import chapter9.custom_iterator.MenuItem;
+import chapter9.custom_iterator.iterator.Iterator;
+import chapter9.custom_iterator.iterator.PancakeHouseMenuIterator;
 
 import java.util.ArrayList;
 import java.util.List;

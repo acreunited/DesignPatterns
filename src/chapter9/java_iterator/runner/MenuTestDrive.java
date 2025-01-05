@@ -1,8 +1,8 @@
-package chapter9.runner;
+package chapter9.java_iterator.runner;
 
-import chapter9.Waitress;
-import chapter9.menu.DinnerMenu;
-import chapter9.menu.PancakeHouseMenu;
+import chapter9.java_iterator.Waitress;
+import chapter9.java_iterator.menu.DinnerMenu;
+import chapter9.java_iterator.menu.PancakeHouseMenu;
 
 public final class MenuTestDrive {
 

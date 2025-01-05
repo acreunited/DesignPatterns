@@ -1,8 +1,8 @@
-package chapter9;
+package chapter9.java_iterator;
 
-import chapter9.iterator.Iterator;
-import chapter9.menu.DinnerMenu;
-import chapter9.menu.PancakeHouseMenu;
+import chapter9.java_iterator.iterator.Iterator;
+import chapter9.java_iterator.menu.DinnerMenu;
+import chapter9.java_iterator.menu.PancakeHouseMenu;
 
 public class Waitress {
 
