@@ -5,7 +5,7 @@ import chapter9.java_iterator.iterator.DinnerMenuIterator;
 
 import java.util.Iterator;
 
-public class DinnerMenu {
+public class DinnerMenu implements Menu {
 
     private static final int MAX_ITEMS = 4;
 
