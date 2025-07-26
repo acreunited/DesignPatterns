@@ -100,3 +100,9 @@ Chapter9: Composite Pattern
   uniformly
 - there are many design tradeoffs in implementing Composite. You need to balance transparency and safety with your
   needs.
+
+Chapter10: State Pattern
+
+- allows an object to alter its behavior when its internal state changes.
+  The object will appear to change its class.
+- 
