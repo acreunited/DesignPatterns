@@ -39,7 +39,7 @@ public class DuckAdapter implements Turkey {
 
     @Override
     public void fly() {
-        if (this.random.nextInt(5) == 0) {
+        if (this.random.nextInt(NUMBER_OF_FLIES) == 0) {
             this.duck.fly();
         }
     }
