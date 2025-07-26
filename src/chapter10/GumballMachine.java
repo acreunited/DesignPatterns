@@ -3,6 +3,7 @@ package chapter10;
 import chapter10.states.HasQuarterState;
 import chapter10.states.NoQuarterState;
 import chapter10.states.SoldOutState;
+import chapter10.states.SoldState;
 import chapter10.states.State;
 
 public class GumballMachine {
@@ -23,7 +24,7 @@ public class GumballMachine {
         this.soldOutState = new SoldOutState(this);
         this.noQuarterState = new NoQuarterState(this);
         this.hasQuarterState = new HasQuarterState(this);
-        this.soldOutState = new SoldOutState(this);
+        this.soldState = new SoldState(this);
 
         this.count = numberGumballs;
         this.state = numberGumballs > 0 ? this.noQuarterState : this.soldOutState;
