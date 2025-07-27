@@ -7,7 +7,7 @@ public final class GumballRunner {
     }
 
     public static void main(String[] args) {
-        final GumballMachine machine = new GumballMachine(5);
+        final GumballMachine machine = new GumballMachine("Aveiro", 5);
         System.out.println(machine);
 
         machine.insertQuarter();
