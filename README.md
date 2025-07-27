@@ -107,3 +107,7 @@ Chapter10: State Pattern
   The object will appear to change its class.
 - by encapsulating each state into a class, we localize any changes that will need to be made
 - using the State Pattern will typically result in a greater number of classes in your design
+
+Chapter11: Proxy Pattern
+
+- Proxies control and manage access
