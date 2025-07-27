@@ -1,5 +1,7 @@
 package chapter11.gumball;
 
+import chapter11.gumball.machine.GumballMachine;
+
 public class GumballMonitor {
 
     private GumballMachine machine;

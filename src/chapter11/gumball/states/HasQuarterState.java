@@ -1,6 +1,6 @@
 package chapter11.gumball.states;
 
-import chapter11.gumball.GumballMachine;
+import chapter11.gumball.machine.GumballMachine;
 
 public class HasQuarterState implements State {
 

@@ -1,4 +1,4 @@
-package chapter11.gumball;
+package chapter11.gumball.machine;
 
 import chapter11.gumball.states.HasQuarterState;
 import chapter11.gumball.states.NoQuarterState;
