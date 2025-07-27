@@ -4,7 +4,15 @@ import chapter11.gumball.GumballMachine;
 
 public class SoldState implements State {
 
-    private final GumballMachine gumballMachine;
+    /**
+     * Needs to add serialVersionUID, because we must serialize this
+     */
+    private static final long serialVersionUID = 2L;
+
+    /**
+     * The 'transient' keyword tells the JVM not to serialize this field.
+     */
+    private final transient GumballMachine gumballMachine;
 
     public SoldState(final GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

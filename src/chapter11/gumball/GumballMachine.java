@@ -6,7 +6,17 @@ import chapter11.gumball.states.SoldOutState;
 import chapter11.gumball.states.SoldState;
 import chapter11.gumball.states.State;
 
-public class GumballMachine {
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+/**
+ * The Gumball Machine class.
+ * Must be a subclass of UnicastRemoteObject, to give it the ability to act as a remote service
+ * And, of course, needs to implement our Remote interface (GumballMachineRemote)
+ */
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+
+    private static final long serialVersionUID = 2L;
 
     private State soldOutState;
 
@@ -22,7 +32,8 @@ public class GumballMachine {
 
     private String location;
 
-    public GumballMachine(final String location, final int numberGumballs) {
+    public GumballMachine(final String location, final int numberGumballs) throws RemoteException {
+        super();
         this.soldOutState = new SoldOutState(this);
         this.noQuarterState = new NoQuarterState(this);
         this.hasQuarterState = new HasQuarterState(this);

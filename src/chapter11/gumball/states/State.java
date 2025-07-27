@@ -1,6 +1,11 @@
 package chapter11.gumball.states;
 
-public interface State {
+import java.io.Serializable;
+
+/**
+ * Needs to extend Serializable, so that its possible to transfer it over the network
+ */
+public interface State extends Serializable {
 
     void insertQuarter();
 
