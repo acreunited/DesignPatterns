@@ -5,6 +5,8 @@ import chapter11.gumball.machine.GumballMachineRemote;
 
 import java.rmi.Naming;
 import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
 
 public final class GumballRunner {
 
@@ -12,33 +14,23 @@ public final class GumballRunner {
         // empty
     }
 
+    //127.0.0.1:8080
     public static void main(String[] args) {
         if (args.length < 2) {
             throw new IllegalArgumentException("GumballMachine <name> <inventory>");
         }
 
         try {
+            LocateRegistry.createRegistry(1099);
+            System.out.println("Created Registry");
+
             final int count = Integer.parseInt(args[1]);
             final Remote machine = new GumballMachine(args[0], count);
             Naming.rebind("//%s/gumballmachine".formatted(args[0]), machine);
+            System.out.println("GumballMachine registered");
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(1);
         }
-
-//        final GumballMachine machine = new GumballMachine("Aveiro", 5);
-//        System.out.println(machine);
-//
-//        machine.insertQuarter();
-//        machine.turnCrank();
-//
-//        System.out.println(machine);
-//
-//        machine.insertQuarter();
-//        machine.turnCrank();
-//        machine.insertQuarter();
-//        machine.turnCrank();
-//
-//        System.out.println(machine);
     }
 }

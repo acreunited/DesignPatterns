@@ -6,6 +6,7 @@ import chapter11.gumball.states.SoldOutState;
 import chapter11.gumball.states.SoldState;
 import chapter11.gumball.states.State;
 
+import java.io.Serializable;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
