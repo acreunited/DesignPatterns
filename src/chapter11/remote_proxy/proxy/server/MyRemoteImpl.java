@@ -1,4 +1,4 @@
-package chapter11.proxy.server;
+package chapter11.remote_proxy.proxy.server;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;

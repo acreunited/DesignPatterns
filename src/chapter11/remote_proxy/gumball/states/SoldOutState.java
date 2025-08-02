@@ -1,8 +1,8 @@
-package chapter11.gumball.states;
+package chapter11.remote_proxy.gumball.states;
 
-import chapter11.gumball.machine.GumballMachine;
+import chapter11.remote_proxy.gumball.machine.GumballMachine;
 
-public class NoQuarterState implements State {
+public class SoldOutState implements State {
 
     /**
      * Needs to add serialVersionUID, because we must serialize this
@@ -14,28 +14,28 @@ public class NoQuarterState implements State {
      */
     private final transient GumballMachine gumballMachine;
 
-    public NoQuarterState(final GumballMachine gumballMachine) {
+    public SoldOutState(final GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 
+
     @Override
     public void insertQuarter() {
-        System.out.println("You inserted a quarter");
-        this.gumballMachine.setState(this.gumballMachine.getHasQuarterState());
+        System.out.println("You can't insert a quarter, the machine is sold out");
     }
 
     @Override
     public void ejectQuarter() {
-        System.out.println("You haven't inserted a quarter");
+        System.out.println("You can't eject, you haven't inserted a quarter yet");
     }
 
     @Override
     public void turnCrank() {
-        System.out.println("You turned, but there's no quarter");
+        System.out.println("You turned, but there are no gumballs");
     }
 
     @Override
     public void dispense() {
-        System.out.println("You need to pay first");
+        System.out.println("No gumball dispensed");
     }
 }

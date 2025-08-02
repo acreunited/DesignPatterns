@@ -1,6 +1,6 @@
-package chapter11.gumball.monitor;
+package chapter11.remote_proxy.gumball.monitor;
 
-import chapter11.gumball.machine.GumballMachineRemote;
+import chapter11.remote_proxy.gumball.machine.GumballMachineRemote;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;

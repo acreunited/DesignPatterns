@@ -1,4 +1,4 @@
-package chapter11.gumball.states;
+package chapter11.remote_proxy.gumball.states;
 
 import java.io.Serializable;
 

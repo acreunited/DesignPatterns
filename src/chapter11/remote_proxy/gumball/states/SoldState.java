@@ -1,6 +1,6 @@
-package chapter11.gumball.states;
+package chapter11.remote_proxy.gumball.states;
 
-import chapter11.gumball.machine.GumballMachine;
+import chapter11.remote_proxy.gumball.machine.GumballMachine;
 
 public class SoldState implements State {
 

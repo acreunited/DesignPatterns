@@ -1,6 +1,6 @@
-package chapter11.proxy.client;
+package chapter11.remote_proxy.proxy.client;
 
-import chapter11.proxy.server.MyRemote;
+import chapter11.remote_proxy.proxy.server.MyRemote;
 
 import java.rmi.Naming;
 

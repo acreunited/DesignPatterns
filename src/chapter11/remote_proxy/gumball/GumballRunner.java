@@ -1,7 +1,7 @@
-package chapter11.gumball;
+package chapter11.remote_proxy.gumball;
 
-import chapter11.gumball.machine.GumballMachine;
-import chapter11.gumball.machine.GumballMachineRemote;
+import chapter11.remote_proxy.gumball.machine.GumballMachine;
+import chapter11.remote_proxy.gumball.machine.GumballMachineRemote;
 
 import java.rmi.Naming;
 import java.rmi.Remote;

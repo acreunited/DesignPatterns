@@ -1,6 +1,6 @@
-package chapter11.gumball.machine;
+package chapter11.remote_proxy.gumball.machine;
 
-import chapter11.gumball.states.State;
+import chapter11.remote_proxy.gumball.states.State;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
