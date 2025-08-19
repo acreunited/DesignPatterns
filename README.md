@@ -107,3 +107,13 @@ Chapter10: State Pattern
   The object will appear to change its class.
 - by encapsulating each state into a class, we localize any changes that will need to be made
 - using the State Pattern will typically result in a greater number of classes in your design
+
+Chapter11: Proxy Pattern
+
+- Provides a surrogate or placeholder for another object to control access to it
+- Proxies control and manage access
+- Remote Proxy manages interactions between a client and a remote object
+- Virtual Proxy controls access to an object that is expensive to instantiate
+- Protection Proxy controls access to the methods of an object based on the called
+- There are several other proxy patterns, like catching, synchronization, firewall, copy-on-write proxies, etc
+- like any wrapper, proxies will increase the number of classes and objects in your designs
