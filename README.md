@@ -117,3 +117,13 @@ Chapter11: Proxy Pattern
 - Protection Proxy controls access to the methods of an object based on the called
 - There are several other proxy patterns, like catching, synchronization, firewall, copy-on-write proxies, etc
 - like any wrapper, proxies will increase the number of classes and objects in your designs
+
+Chapter12: Compound Patterns
+
+- A compound pattern combines two or more patterns into a solution that solves a recurring or general problem
+- The Modal View Controller (MVC) Pattern is a compound pattern consisting of the Observer, Strategy and Composite Patterns
+- The model makes use of the Observer pattern so that it can keep observers updated, yet stay decoupled from them
+- The controller is the Strategy for the view. - The view can use different implementations of the controller to get different behavior
+- The view uses the Composite Pattern to implement the user interface
+- These patterns work together to decuple the three players in the MVC model, which keeps designs clear and flexible
+- MVC has been adapted to the WEB
