@@ -121,9 +121,94 @@ Chapter11: Proxy Pattern
 Chapter12: Compound Patterns
 
 - A compound pattern combines two or more patterns into a solution that solves a recurring or general problem
-- The Modal View Controller (MVC) Pattern is a compound pattern consisting of the Observer, Strategy and Composite Patterns
+- The Modal View Controller (MVC) Pattern is a compound pattern consisting of the Observer, Strategy and Composite
+  Patterns
 - The model makes use of the Observer pattern so that it can keep observers updated, yet stay decoupled from them
-- The controller is the Strategy for the view. - The view can use different implementations of the controller to get different behavior
+- The controller is the Strategy for the view. - The view can use different implementations of the controller to get
+  different behavior
 - The view uses the Composite Pattern to implement the user interface
 - These patterns work together to decuple the three players in the MVC model, which keeps designs clear and flexible
 - MVC has been adapted to the WEB
+
+Bridge Pattern:
+
+- decouples an implementation so that it is not bound permanently to an interface
+- abstraction and implementation can be extended independently
+- changes to the concrete abstraction classes don't affect the client
+- used to vary not only implementations, but also abstractions
+- useful in graphics and windowing systems that need to run over multiple platforms
+- increases complexity
+
+Builder Pattern:
+
+- use the Builder Pattern to encapsulate the construction of a product and allow it to be constructed in steps
+- encapsulates the way a complex object is constructed
+- hides the internal representation of the product from the client
+- often used for building composite structures
+- constructing objects requires more domain knowledge of the client that when using a Factory
+
+Chain of Responsibility Pattern:
+
+- when you want to give more than one object a chance to handle a request
+- decouples the sender of the request and its receivers
+- simplifies your object because it doesn't have to know the chain's structure and keep direct references to its members
+- allows you to add or remove responsibilities dynamically, by changing the members or order of the chain
+- commonly used in Windows systems to handle events like mouse clicks and keyboard events
+- execution of the request isn't guaranteed; it may fall off the end of the chain if no object handles it
+  (this can be an advantage or disadvantage)
+- can be hard to observe and debug at runtime
+
+Flyweight Pattern:
+
+- when one instance of a class can be used to provide many virtual instances
+- reduces the number of object instances at runtime, saving memory
+- centralizes state for many virtual objects into a single location
+- its used when a class had many instances, and they all can be controller identically
+- a drawback is that, once its implemented, single instances of the class will not be able to behave independently of
+  other instances
+
+Interpreter Pattern
+
+- used to build an interpreter for a simple language (if complex, its better a parser / compiler generator)
+- when simplicity is more important than efficiency
+- representing each grammar rule in a class makes the language easy to implement
+- because the grammar is represented by classes, can easily be changed or extended
+- by adding methods to the class structure, you can add new behaviors beyond interpretation, like pretty printing and
+  more sophisticated program validation
+
+Mediator Pattern
+
+- use it to centralize complex communications and control between related objects
+- increases the re-usability of the objects supported by the Mediator by decoupling them from the system
+- simplifies maintenance of the system by centralizing control logic
+- simplifies and reduces the variety of messages sent between objects in the system
+- commonly used to coordinate related GUI components
+- a drawback is that without proper design, the Mediator itself can become overly complex
+
+Memento Pattern
+
+- when you need to be able to return an object to one of its previous states
+- used to save state
+- drawback is that saving and restoring state can be time-consuming
+- in Java systems, consider using Serialization to save a system's state
+- keeping the saved state external from the key object helps to maintain cohesion
+- keeps the key object's data encapsulated
+- provides easy-to-implement recovery capabilities
+
+Prototype Pattern
+
+- use it when creating an instance of a given class is either expensive or complicated
+- should be considered when a system must create new objects of many types in a complex class hierarchy
+- a drawback is that making a copy of an object can sometimes be complicated
+- hides the complexities of making new instances from the client
+- in some circumstances, copying an object can be more efficient than creating a new object
+
+Visitor Pattern
+
+- when you want to add capabilities to a composite of objects and encapsulation is not important
+- allows you to add operations to a Composite structure without changing the structure itself
+- adding new operations is easy
+- the code for operations performed by the Visitor is centralized
+- As drawback, the Composite classes encapsulation is broken when the Visitor is used
+- Another drawback is that changes to the composite structure are more difficult, because the traversal function is
+  involved
